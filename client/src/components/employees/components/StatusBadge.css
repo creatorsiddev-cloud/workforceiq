@@ -1,0 +1,47 @@
+.status-badge{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* Active */
+
+.status-badge.active{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+/* Leave */
+
+.status-badge.on-leave{
+
+    background:#FEF3C7;
+
+    color:#D97706;
+
+}
+
+/* Inactive */
+
+.status-badge.inactive{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+}

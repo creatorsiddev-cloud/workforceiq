@@ -1,0 +1,115 @@
+/* ==========================
+   RECENT ACTIVITY
+========================== */
+
+.recent-activity{
+
+    flex:1;
+
+    background:#FFFFFF;
+
+    border:1px solid #E8EEF7;
+
+    border-radius:22px;
+
+    padding:24px;
+
+    box-shadow:0 12px 35px rgba(15,23,42,.06);
+
+    transition:.3s;
+
+}
+
+.recent-activity:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+
+}
+
+/* ==========================
+   ACTIVITY ITEM
+========================== */
+
+.activity-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.activity-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.activity-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+}
+
+.activity-details{
+
+    flex:1;
+
+}
+
+.activity-details h4{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#0F172A;
+
+    margin-bottom:5px;
+
+}
+
+.activity-details p{
+
+    font-size:13px;
+
+    color:#64748B;
+
+    line-height:1.5;
+
+}
+
+.activity-time{
+
+    font-size:12px;
+
+    color:#94A3B8;
+
+    white-space:nowrap;
+
+}

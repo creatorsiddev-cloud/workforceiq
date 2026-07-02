@@ -1,0 +1,60 @@
+.department-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.department-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.department-badge {
+  width: fit-content;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.department-header h1 {
+  font-size: 34px;
+  color: #111827;
+  font-weight: 700;
+}
+
+.department-header p {
+  max-width: 650px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.add-department-btn {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.add-department-btn:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width:768px){
+
+  .department-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+  }
+
+}

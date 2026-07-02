@@ -1,0 +1,67 @@
+.toolbar-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:12px 18px;
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.toolbar-btn:hover{
+
+    background:#f8fafc;
+
+    border-color:#2563eb;
+
+    color:#2563eb;
+
+}
+
+.toolbar-btn-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:16px;
+
+}
+
+.toolbar-btn-text{
+
+    white-space:nowrap;
+
+}
+
+@media(max-width:768px){
+
+    .toolbar-btn{
+
+        flex:1;
+
+    }
+
+}

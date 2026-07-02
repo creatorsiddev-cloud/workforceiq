@@ -1,0 +1,341 @@
+/*==========================================
+Sidebar
+==========================================*/
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:280px;
+
+    height:100vh;
+
+    background:#fff;
+
+    border-right:1px solid #e5e7eb;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    padding:24px 18px;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+    transition:transform .35s ease;
+
+}
+
+/*==========================================
+Logo
+==========================================*/
+
+.sidebar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:40px;
+
+}
+
+.logo{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.logo-text h2{
+
+    margin:0;
+
+    font-size:20px;
+
+    color:#0f172a;
+
+}
+
+.logo-text p{
+
+    margin-top:4px;
+
+    font-size:13px;
+
+    color:#64748b;
+
+}
+
+/*==========================================
+Navigation
+==========================================*/
+
+.sidebar-nav ul,
+.bottom-menu{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.sidebar-nav li,
+.bottom-menu li{
+
+    margin-bottom:10px;
+
+}
+
+.sidebar-nav a,
+.bottom-menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    color:#475569;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.sidebar-nav a:hover,
+.bottom-menu a:hover{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+}
+
+.sidebar-nav .active,
+.bottom-menu .active{
+
+    background:#2563eb;
+
+    color:#fff;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+
+}
+
+/*==========================================
+Bottom
+==========================================*/
+
+.sidebar-bottom{
+
+    margin-top:30px;
+
+}
+
+.logout-btn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+    color:#fff;
+
+}
+
+/*==========================================
+Overlay
+==========================================*/
+
+.sidebar-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,23,42,.45);
+
+    backdrop-filter:blur(2px);
+
+    z-index:999;
+
+}
+
+/*==========================================
+Close Button
+==========================================*/
+
+.close-sidebar{
+
+    display:none;
+
+}
+
+/*==========================================
+Tablet
+==========================================*/
+
+@media(max-width:992px){
+
+    .sidebar{
+
+        transform:translateX(-100%);
+
+        width:270px;
+
+    }
+
+    .sidebar.open{
+
+        transform:translateX(0);
+
+    }
+
+    .close-sidebar{
+
+        position:absolute;
+
+        top:18px;
+
+        right:18px;
+
+        width:42px;
+
+        height:42px;
+
+        border:none;
+
+        border-radius:10px;
+
+        background:#f1f5f9;
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        cursor:pointer;
+
+        font-size:22px;
+
+    }
+
+    .close-sidebar:hover{
+
+        background:#2563eb;
+
+        color:#fff;
+
+    }
+
+}
+
+/*==========================================
+Mobile
+==========================================*/
+
+@media(max-width:576px){
+
+    .sidebar{
+
+        width:250px;
+
+        padding:20px 16px;
+
+    }
+
+    .logo{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:20px;
+
+    }
+
+    .logo-text h2{
+
+        font-size:18px;
+
+    }
+
+    .sidebar-nav a,
+    .bottom-menu a{
+
+        padding:12px 14px;
+
+        font-size:14px;
+
+    }
+
+}

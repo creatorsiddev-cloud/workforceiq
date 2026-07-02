@@ -1,0 +1,53 @@
+.activity-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.activity-header h1{
+
+    margin:0;
+
+    font-size:32px;
+
+    color:#0f172a;
+
+}
+
+.activity-header p{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+}
+
+.back-dashboard-btn{
+
+    text-decoration:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-dashboard-btn:hover{
+
+    background:#1d4ed8;
+
+}

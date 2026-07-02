@@ -1,0 +1,370 @@
+/* ==========================
+   FORM GROUP
+========================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+/* ==========================
+   LABEL
+========================== */
+
+.form-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.required{
+
+    color:#EF4444;
+
+    margin-left:4px;
+
+}
+
+/* ==========================
+   INPUT
+========================== */
+
+.form-group input{
+
+    width:100%;
+
+    height:52px;
+
+    padding:0 16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    color:#0F172A;
+
+    background:#FFFFFF;
+
+    transition:.3s;
+
+}
+
+.form-group input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.form-group input:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+.form-group input:disabled{
+
+    background:#F8FAFC;
+
+    cursor:not-allowed;
+
+}
+
+/* ==========================
+   ERROR
+========================== */
+
+.input-error{
+
+    border-color:#EF4444 !important;
+
+}
+
+.error-message{
+
+    font-size:12px;
+
+    color:#EF4444;
+
+}
+
+/* ==========================
+   SELECT
+========================== */
+
+.select-wrapper{
+
+    position:relative;
+
+}
+
+.select-wrapper select{
+
+    width:100%;
+
+    height:52px;
+
+    padding:0 45px 0 16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    background:#FFFFFF;
+
+    outline:none;
+
+    font-size:15px;
+
+    color:#0F172A;
+
+    appearance:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.select-wrapper select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+.select-icon{
+
+    position:absolute;
+
+    top:50%;
+
+    right:16px;
+
+    transform:translateY(-50%);
+
+    color:#64748B;
+
+    pointer-events:none;
+
+    font-size:18px;
+
+}
+
+
+/* ==========================
+   DATE INPUT
+========================== */
+
+.date-wrapper{
+
+    position:relative;
+
+}
+
+.date-wrapper input{
+
+    width:100%;
+
+    height:52px;
+
+    padding:0 45px 0 16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    background:#FFFFFF;
+
+    transition:.3s;
+
+}
+
+.date-wrapper input:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+.date-icon{
+
+    position:absolute;
+
+    top:50%;
+
+    right:16px;
+
+    transform:translateY(-50%);
+
+    color:#64748B;
+
+    pointer-events:none;
+
+    font-size:18px;
+
+}
+
+/* Makes the browser calendar icon invisible */
+
+.date-wrapper input::-webkit-calendar-picker-indicator{
+
+    opacity:0;
+
+    cursor:pointer;
+
+    position:absolute;
+
+    right:0;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+/* ==========================
+   IMAGE UPLOAD
+========================== */
+
+.image-upload{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+/* Preview */
+
+.image-preview{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    border:3px dashed #CBD5E1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    background:#F8FAFC;
+
+}
+
+.image-preview:hover{
+
+    border-color:#2563EB;
+
+    background:#EFF6FF;
+
+}
+
+.image-preview img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* Camera */
+
+.camera-icon{
+
+    font-size:42px;
+
+    color:#2563EB;
+
+    margin-bottom:12px;
+
+}
+
+.image-preview p{
+
+    color:#64748B;
+
+    font-size:14px;
+
+}
+
+/* Button */
+
+.upload-btn{
+
+    margin-top:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:48px;
+
+    padding:0 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563EB;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.upload-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}

@@ -1,0 +1,21 @@
+.filter-dropdown{
+
+    min-width:170px;
+
+    height:46px;
+
+    padding:0 15px;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    cursor:pointer;
+
+    outline:none;
+
+    font-size:14px;
+
+}

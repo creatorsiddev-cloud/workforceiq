@@ -1,0 +1,48 @@
+/*==========================================
+Profile Page
+==========================================*/
+
+.profile-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*==========================================
+Layout
+==========================================*/
+
+.profile-content{
+
+    display:flex;
+    flex-direction:column;
+
+    grid-template-columns:320px 1fr;
+
+    gap:30px;
+
+    align-items:start;
+
+}
+
+/*==========================================
+Responsive
+==========================================*/
+
+@media(max-width:992px){
+
+    .profile-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

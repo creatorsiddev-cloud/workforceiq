@@ -1,0 +1,23 @@
+tbody tr{
+
+    transition:.25s;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+tbody td{
+
+    padding:16px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#334155;
+
+    font-size:14px;
+
+}

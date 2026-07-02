@@ -1,0 +1,29 @@
+.module-badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.module-badge.employee{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+}
+
+.module-badge.department{
+
+    background:#fff7ed;
+
+    color:#ea580c;
+
+}

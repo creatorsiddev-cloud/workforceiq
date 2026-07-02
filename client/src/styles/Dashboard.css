@@ -1,0 +1,343 @@
+.dashboard{
+
+   
+    
+
+    min-height: 0vh;
+
+    padding:32px;
+
+    background:#F8FAFC;
+    
+
+}
+/*==========================================
+  Welcome Section
+==========================================*/
+
+.welcome-section {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 280px;
+
+    padding: 40px;
+
+    margin-bottom: 30px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(114, 159, 231, 0.8),
+            transparent 80%
+        ),
+        linear-gradient(
+            135deg,
+            #F7FAFF,
+            #DDEBFF
+        );
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+
+}
+
+/*==========================================
+  Decorative Background
+==========================================*/
+
+.welcome-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 170px;
+
+    left: -50px;
+
+    width: 240px;
+
+    height: 240px;
+
+    border-radius: 32px;
+
+    background: rgb(92, 176, 255);
+
+    transform: rotate(20deg);
+
+    background-image:
+        radial-gradient(
+            rgba(255,255,255,.9) 1.5px,
+            transparent 1.5px
+        );
+
+    background-size: 16px 16px;
+
+    opacity: .7;
+
+}
+
+.welcome-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: -70px;
+
+    right: -50px;
+
+    width: 240px;
+
+    height: 240px;
+
+    border-radius: 32px;
+
+    background: rgb(49, 143, 231);
+
+    transform: rotate(20deg);
+
+    background-image:
+        radial-gradient(
+            rgba(255,255,255,.9) 1.5px,
+            transparent 1.5px
+        );
+
+    background-size: 16px 16px;
+
+    opacity: .7;
+
+}
+
+/*==========================================
+  Keep Content Above Shapes
+==========================================*/
+
+.welcome-text,
+.hero-stats,
+.add-btn {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+/*==========================================
+  Welcome Text
+==========================================*/
+
+.welcome-text h1 {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #0F172A;
+
+    margin-bottom: 10px;
+
+    max-width: 520px;
+
+}
+
+.welcome-text p {
+
+    font-size: 16px;
+
+    color: #64748B;
+
+    margin-bottom: 10px;
+
+}
+
+.welcome-text span {
+
+    font-size: 14px;
+
+    color: #94A3B8;
+
+}
+
+/*==========================================
+  Hero Stats
+==========================================*/
+
+.hero-stats {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin: 35px 0 20px;
+
+}
+
+.hero-stat {
+
+    width: 140px;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,.55);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,.6);
+
+    transition: .3s;
+
+}
+
+.hero-stat:hover {
+
+    transform: translateY(-5px);
+
+    background: white;
+
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
+
+}
+
+.hero-stat h3 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #0F172A;
+
+}
+
+.hero-stat span {
+
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 14px;
+
+    color: #64748B;
+
+}
+
+/*==========================================
+  Add Button
+==========================================*/
+
+.add-btn {
+
+    align-self: flex-start;
+
+    height: 54px;
+
+    padding: 0 28px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #2563EB,
+        #3B82F6
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.add-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(37,99,235,.25);
+
+}
+
+/*==========================================
+  Bottom Section
+==========================================*/
+
+.bottom-section {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+
+    margin-top: 32px;
+
+}
+
+/*==========================================
+  Responsive
+==========================================*/
+
+@media (max-width:1100px) {
+
+    .bottom-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .welcome-section {
+
+        padding: 28px;
+
+    }
+
+    .welcome-text h1 {
+
+        font-size: 28px;
+
+    }
+
+    .hero-stats {
+
+        justify-content: center;
+
+    }
+
+    .hero-stat {
+
+        width: 100%;
+
+    }
+
+    .add-btn {
+
+        width: 100%;
+
+    }
+
+}

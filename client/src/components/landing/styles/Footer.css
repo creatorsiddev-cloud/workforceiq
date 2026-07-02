@@ -1,0 +1,37 @@
+.landing-footer{
+
+    margin-top:100px;
+
+    padding:50px 20px;
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.landing-footer h3{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.landing-footer p{
+
+    color:#cbd5e1;
+
+    margin-bottom:10px;
+
+}
+
+.landing-footer span{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}

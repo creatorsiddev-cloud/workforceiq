@@ -1,0 +1,135 @@
+.employee-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+gap: 15px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    transition: 0.3s;
+
+}
+
+.employee-row:last-child {
+
+    border-bottom: none;
+
+}
+
+.employee-row:hover {
+
+    background: #f8fafc;
+
+    border-radius: 12px;
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+}
+
+.employee-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex: 2;
+
+}
+
+.employee-avatar {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+
+}
+
+.employee-info h4 {
+
+    margin: 0;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #1e293b;
+
+}
+
+.employee-info p {
+
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+.employee-department {
+
+    flex: 1;
+
+    font-size: 15px;
+
+    color: #475569;
+
+    font-weight: 500;
+
+}
+
+.employee-status {
+
+    padding: 7px 16px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    min-width: 90px;
+
+}
+
+.employee-status.active {
+
+    background: #dcfce7;
+
+    color: #16a34a;
+
+}
+
+.employee-status.inactive {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+}
+
+.employee-status.on-leave {
+
+    background: #fef3c7;
+
+    color: #d97706;
+
+}

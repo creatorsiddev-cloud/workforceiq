@@ -1,0 +1,39 @@
+.action-badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-transform:capitalize;
+
+}
+
+.action-badge.added{
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+}
+
+.action-badge.updated{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+}
+
+.action-badge.deleted{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}

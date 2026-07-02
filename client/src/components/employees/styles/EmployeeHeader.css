@@ -1,0 +1,118 @@
+/* ==========================
+   EMPLOYEE HEADER
+========================== */
+
+.employee-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:32px;
+
+}
+
+/* Left */
+
+.employee-header-left{
+
+    max-width:650px;
+
+}
+
+.employee-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 16px;
+
+    margin-bottom:18px;
+
+    border-radius:999px;
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.employee-header-left h1{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:12px;
+
+    letter-spacing:-1px;
+
+}
+
+.employee-header-left p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    color:#64748B;
+
+}
+
+/* Right */
+
+.employee-header-right{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+/* Button */
+
+.add-employee-btn{
+
+    height:52px;
+
+    padding:0 28px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #3B82F6
+    );
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.add-employee-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.25);
+
+}

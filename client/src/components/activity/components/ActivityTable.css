@@ -1,0 +1,49 @@
+.activity-table-container{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+
+}
+
+.activity-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.activity-table thead{
+
+    background:#f8fafc;
+
+}
+
+.activity-table th{
+
+    padding:18px;
+
+    text-align:left;
+
+    color:#475569;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.empty-table{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#94a3b8;
+
+}

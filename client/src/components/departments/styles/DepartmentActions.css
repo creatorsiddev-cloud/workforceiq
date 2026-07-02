@@ -1,0 +1,75 @@
+.department-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.department-actions button{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+.view-btn{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+}
+
+.view-btn:hover{
+
+    background:#dbeafe;
+
+}
+
+.edit-btn-department{
+
+    background:#fef3c7;
+
+    color:#d97706;
+
+}
+
+.edit-btn-department:hover{
+
+    background:#fde68a;
+
+}
+
+.delete-btn-department{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+.delete-btn-department:hover{
+
+    background:#fecaca;
+
+}

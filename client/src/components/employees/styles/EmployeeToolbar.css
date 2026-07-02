@@ -1,0 +1,33 @@
+.employee-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:32px 0;
+
+    gap:24px;
+
+}
+
+.toolbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+}
+
+.toolbar-right{
+
+    display:flex;
+
+    gap:16px;
+
+}

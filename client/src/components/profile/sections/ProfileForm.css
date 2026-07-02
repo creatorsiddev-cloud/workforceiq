@@ -1,0 +1,65 @@
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.full-width{
+
+    grid-column:1 / -1;
+
+}
+
+.profile-divider{
+
+    border:none;
+
+    height:1px;
+
+    background:#e5e7eb;
+
+    margin:30px 0;
+
+}
+
+.form-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:30px;
+
+}
+
+.profile-form button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:13px 28px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
