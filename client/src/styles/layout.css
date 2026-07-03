@@ -1,69 +1,107 @@
-/*==========================================
-Layout
-==========================================*/
+/* ============================================
+   WorkforceIQ — Design Tokens
+   ============================================ */
+:root {
+  /* Palette */
+  --wiq-navy-950: #0f1424;
+  --wiq-navy-900: #141b2f;
+  --wiq-navy-800: #1c2540;
+  --wiq-navy-700: #29335a;
+  --wiq-teal-500: #2dd4bf;
+  --wiq-teal-400: #5eead4;
+  --wiq-amber-500: #f5a524;
 
-.layout{
+  --wiq-bg: #f3f5fa;
+  --wiq-surface: #ffffff;
+  --wiq-border: #e4e8f1;
 
-    display:flex;
+  --wiq-text-900: #131a2c;
+  --wiq-text-600: #5b6479;
+  --wiq-text-400: #9299ac;
+  --wiq-text-on-dark: #eef1fa;
+  --wiq-text-on-dark-muted: #8b93ad;
 
-    min-height:100vh;
+  /* Layout */
+  --wiq-sidebar-width: 264px;
+  --wiq-navbar-height: 72px;
+  --wiq-radius-sm: 8px;
+  --wiq-radius-md: 12px;
+  --wiq-radius-lg: 18px;
 
-    background:#f8fafc;
+  /* Motion */
+  --wiq-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --wiq-speed: 220ms;
 
+  --wiq-shadow-sm: 0 1px 2px rgba(15, 20, 36, 0.06);
+  --wiq-shadow-md: 0 8px 24px rgba(15, 20, 36, 0.08);
+  --wiq-shadow-lg: 0 16px 40px rgba(15, 20, 36, 0.16);
 }
 
-/*==========================================
-Main Content
-==========================================*/
-
-.main-content{
-
-    flex:1;
-
-    margin-left:280px;
-
-    min-width:0;
-
-    transition:.35s ease;
-
+* {
+  box-sizing: border-box;
 }
 
-/*==========================================
-Page Content
-==========================================*/
-
-.page-content{
-
-    padding:28px;
-
+body {
+  margin: 0;
+  background: var(--wiq-bg);
+  color: var(--wiq-text-900);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/*==========================================
-Tablet
-==========================================*/
-
-@media(max-width:992px){
-
-    .main-content{
-
-        margin-left:0;
-
-        width:100%;
-
-    }
-
+/* ============================================
+   Shell
+   ============================================ */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--wiq-bg);
 }
 
-/*==========================================
-Mobile
-==========================================*/
+.main-content {
+  flex: 1;
+  min-width: 0; /* prevents flex children from overflowing on narrow screens */
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--wiq-sidebar-width);
+  transition: margin-left var(--wiq-speed) var(--wiq-ease);
+}
 
-@media(max-width:576px){
+.page-content {
+  flex: 1;
+  padding: 28px 32px 48px;
+  width: 100%;
+}
 
-    .page-content{
+/* ============================================
+   Responsive breakpoints
+   ============================================ */
 
-        padding:18px;
+/* Tablet: sidebar becomes an overlay drawer */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
 
-    }
+/* Small tablet / large phone */
+@media (max-width: 768px) {
+  .page-content {
+    padding: 20px 20px 40px;
+  }
+}
 
+/* Phone */
+@media (max-width: 480px) {
+  .page-content {
+    padding: 16px 14px 32px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .main-content,
+  .sidebar,
+  .sidebar-overlay {
+    transition: none !important;
+  }
 }

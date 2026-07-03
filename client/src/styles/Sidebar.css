@@ -1,341 +1,201 @@
-/*==========================================
-Sidebar
-==========================================*/
-
-.sidebar{
-
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
-    width:280px;
-
-    height:100vh;
-
-    background:#fff;
-
-    border-right:1px solid #e5e7eb;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-between;
-
-    padding:24px 18px;
-
-    box-shadow:0 5px 25px rgba(0,0,0,.05);
-
-    z-index:1000;
-
-    transition:transform .35s ease;
-
+/* ============================================
+   Sidebar
+   ============================================ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: var(--wiq-sidebar-width);
+  background: linear-gradient(180deg, var(--wiq-navy-900) 0%, var(--wiq-navy-950) 100%);
+  color: var(--wiq-text-on-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 40;
+  transform: translateX(0);
+  transition: transform var(--wiq-speed) var(--wiq-ease);
+  overflow-y: auto;
 }
 
-/*==========================================
-Logo
-==========================================*/
-
-.sidebar-logo{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:14px;
-
-    margin-bottom:40px;
-
+.sidebar-content {
+  padding: 24px 18px 8px;
 }
 
-.logo{
-
-    width:56px;
-
-    height:56px;
-
-    border-radius:16px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:#2563eb;
-
-    color:#fff;
-
-    font-size:22px;
-
-    font-weight:700;
-
+.close-sidebar {
+  display: none; /* only shown on mobile/tablet */
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--wiq-text-on-dark);
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--wiq-speed) var(--wiq-ease);
 }
 
-.logo-text h2{
-
-    margin:0;
-
-    font-size:20px;
-
-    color:#0f172a;
-
+.close-sidebar:hover {
+  background: rgba(255, 255, 255, 0.14);
 }
 
-.logo-text p{
-
-    margin-top:4px;
-
-    font-size:13px;
-
-    color:#64748b;
-
+/* Logo */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 8px 24px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/*==========================================
-Navigation
-==========================================*/
+.sidebar-logo .logo {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: var(--wiq-radius-sm);
+  background: linear-gradient(135deg, var(--wiq-teal-500), var(--wiq-teal-400));
+  color: var(--wiq-navy-950);
+  font-weight: 800;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.sidebar-logo .logo-text h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--wiq-text-on-dark);
+  letter-spacing: 0.2px;
+}
+
+.sidebar-logo .logo-text p {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  color: var(--wiq-text-on-dark-muted);
+}
+
+/* Navigation */
 .sidebar-nav ul,
-.bottom-menu{
-
-    list-style:none;
-
-    padding:0;
-
-    margin:0;
-
-}
-
-.sidebar-nav li,
-.bottom-menu li{
-
-    margin-bottom:10px;
-
+.bottom-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .sidebar-nav a,
-.bottom-menu a{
+.bottom-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--wiq-radius-sm);
+  color: var(--wiq-text-on-dark-muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background var(--wiq-speed) var(--wiq-ease), color var(--wiq-speed) var(--wiq-ease);
+}
 
-    display:flex;
-
-    align-items:center;
-
-    gap:14px;
-
-    padding:14px 18px;
-
-    border-radius:14px;
-
-    color:#475569;
-
-    text-decoration:none;
-
-    font-weight:500;
-
-    transition:.3s;
-
+.sidebar-nav a svg,
+.bottom-menu a svg {
+  font-size: 17px;
+  flex-shrink: 0;
 }
 
 .sidebar-nav a:hover,
-.bottom-menu a:hover{
-
-    background:#eff6ff;
-
-    color:#2563eb;
-
+.bottom-menu a:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--wiq-text-on-dark);
 }
 
-.sidebar-nav .active,
-.bottom-menu .active{
-
-    background:#2563eb;
-
-    color:#fff;
-
-    box-shadow:0 8px 20px rgba(37,99,235,.25);
-
+.sidebar-nav a.active,
+.bottom-menu a.active {
+  background: rgba(45, 212, 191, 0.14);
+  color: var(--wiq-teal-400);
 }
 
-/*==========================================
-Bottom
-==========================================*/
-
-.sidebar-bottom{
-
-    margin-top:30px;
-
+/* Bottom section */
+.sidebar-bottom {
+  padding: 12px 18px 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.logout-btn{
-
-    width:100%;
-
-    margin-top:20px;
-
-    padding:14px;
-
-    border:none;
-
-    border-radius:14px;
-
-    background:#fee2e2;
-
-    color:#dc2626;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:10px;
-
-    cursor:pointer;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    transition:.3s;
-
+.logout-btn {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  background: rgba(239, 68, 68, 0.1);
+  border: none;
+  border-radius: var(--wiq-radius-sm);
+  color: #f87171;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--wiq-speed) var(--wiq-ease);
 }
 
-.logout-btn:hover{
-
-    background:#dc2626;
-
-    color:#fff;
-
+.logout-btn:hover {
+  background: rgba(239, 68, 68, 0.18);
 }
 
-/*==========================================
-Overlay
-==========================================*/
-
-.sidebar-overlay{
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(15,23,42,.45);
-
-    backdrop-filter:blur(2px);
-
-    z-index:999;
-
+/* Overlay (mobile/tablet only) */
+.sidebar-overlay {
+  display: none;
 }
 
-/*==========================================
-Close Button
-==========================================*/
+/* ============================================
+   Responsive: sidebar becomes an off-canvas drawer
+   ============================================ */
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+    box-shadow: var(--wiq-shadow-lg);
+  }
 
-.close-sidebar{
+  .sidebar.open {
+    transform: translateX(0);
+  }
 
-    display:none;
+  .close-sidebar {
+    display: flex;
+  }
 
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 20, 36, 0.5);
+    backdrop-filter: blur(1px);
+    z-index: 30;
+    animation: wiq-fade-in var(--wiq-speed) var(--wiq-ease);
+  }
 }
 
-/*==========================================
-Tablet
-==========================================*/
-
-@media(max-width:992px){
-
-    .sidebar{
-
-        transform:translateX(-100%);
-
-        width:270px;
-
-    }
-
-    .sidebar.open{
-
-        transform:translateX(0);
-
-    }
-
-    .close-sidebar{
-
-        position:absolute;
-
-        top:18px;
-
-        right:18px;
-
-        width:42px;
-
-        height:42px;
-
-        border:none;
-
-        border-radius:10px;
-
-        background:#f1f5f9;
-
-        display:flex;
-
-        justify-content:center;
-
-        align-items:center;
-
-        cursor:pointer;
-
-        font-size:22px;
-
-    }
-
-    .close-sidebar:hover{
-
-        background:#2563eb;
-
-        color:#fff;
-
-    }
-
+@media (max-width: 480px) {
+  .sidebar {
+    width: min(var(--wiq-sidebar-width), 84vw);
+  }
 }
 
-/*==========================================
-Mobile
-==========================================*/
-
-@media(max-width:576px){
-
-    .sidebar{
-
-        width:250px;
-
-        padding:20px 16px;
-
-    }
-
-    .logo{
-
-        width:50px;
-
-        height:50px;
-
-        font-size:20px;
-
-    }
-
-    .logo-text h2{
-
-        font-size:18px;
-
-    }
-
-    .sidebar-nav a,
-    .bottom-menu a{
-
-        padding:12px 14px;
-
-        font-size:14px;
-
-    }
-
+@keyframes wiq-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
