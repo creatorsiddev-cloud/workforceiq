@@ -51,4 +51,4 @@ function DashboardLayout() {
 
 }
 
-export default DashBoardLayout;
+export default DashboardLayout;
