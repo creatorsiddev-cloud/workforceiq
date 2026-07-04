@@ -23,7 +23,7 @@ import Login from "./components/auth/pages/Login";
 import PublicRoute from "./components/routes/PublicRoute";
 import ProtectedRoute from "./components/routes/ProtectedRoute";
 
-import "./styles/layout.css";
+import "./styles/Layout.css";
 
 function App() {
   return (
