@@ -8,7 +8,7 @@ A modern Employee & Department Management System built using the MERN Stack. Wor
 
 ## Live Demo
 
-**Frontend:** *(Add your Vercel URL here)*
+**Frontend:** https://workforceiq-7rgb.vercel.app/
 
 **Backend:** https://workforceiq-5.onrender.com
 
@@ -251,6 +251,8 @@ GET /api/activities
 Add screenshots of:
 
 - Landing Page
+- 
+
 - Login Page
 - Dashboard
 - Employees
