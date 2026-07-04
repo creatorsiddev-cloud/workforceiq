@@ -255,12 +255,28 @@ Add screenshots of:
 
 
 - Login Page
+- <img width="1296" height="610" alt="image" src="https://github.com/user-attachments/assets/195e3ebc-f5f3-495f-9002-a7c09458cd00" />
+
 - Dashboard
+- <img width="1307" height="639" alt="image" src="https://github.com/user-attachments/assets/12f9255b-fadb-4f1b-aded-5bc2d8f127bc" />
+
 - Employees
+- <img width="1315" height="592" alt="image" src="https://github.com/user-attachments/assets/3d76ee1c-22e4-4ced-8d57-a7d5cd81a81a" />
+- <img width="1307" height="608" alt="image" src="https://github.com/user-attachments/assets/cea9d347-8b85-46ba-8fc8-7b88b82d7b7e" />
+
 - Departments
+- <img width="1315" height="608" alt="image" src="https://github.com/user-attachments/assets/c929cb0f-4bc3-4ee0-bc65-dde1cad74f1e" />
+- <img width="1311" height="625" alt="image" src="https://github.com/user-attachments/assets/ddb44604-d9c9-4b7b-bba4-9e131830ec92" />
+
 - Activity Logs
+- <img width="1313" height="594" alt="image" src="https://github.com/user-attachments/assets/a05e34b1-3523-45dd-99b2-5f2c38e50e37" />
+
 - Profile
+- <img width="1311" height="608" alt="image" src="https://github.com/user-attachments/assets/9e6fd340-9dac-4220-aa59-34782f4dea32" />
+- <img width="1309" height="625" alt="image" src="https://github.com/user-attachments/assets/be734a02-4013-49bb-bda3-4cbd4789efc4" />
+
 - Settings
+- <img width="1309" height="626" alt="image" src="https://github.com/user-attachments/assets/02e9b6a1-eb29-47a4-9725-637d949fa0c2" />
 
 ---
 
