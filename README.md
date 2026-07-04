@@ -251,7 +251,8 @@ GET /api/activities
 Add screenshots of:
 
 - Landing Page
-- 
+- <img width="1311" height="573" alt="image" src="https://github.com/user-attachments/assets/193c5914-935d-48ae-817c-b1039793fa32" />
+
 
 - Login Page
 - Dashboard
