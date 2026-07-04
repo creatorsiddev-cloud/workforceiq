@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { addEmployee } from "../services/employeeService";
 
+import { useNavigate } from "react-router-dom";
+
 import Stepper from "../components/employees/sections/Stepper";
 import PersonalInfo from "../components/employees/sections/PersonalInfo";
 import EmploymentInfo from "../components/employees/sections/EmploymentInfo";
@@ -188,19 +190,23 @@ function AddEmployee() {
   // ==========================================
   // Submit
   // ==========================================
+const navigate = useNavigate();
 
-  const handleSubmit = async () => {
-    try {
-      await addEmployee(formData);
+ const handleSubmit = async () => {
+  try {
+    await addEmployee(formData);
 
-      alert("Employee Added Successfully!");
+    alert("Employee Added Successfully!");
 
-      console.log("Employee Saved");
-    } catch (error) {
-      console.error(error);
-      alert("Failed to add employee");
-    }
-  };
+    console.log("Employee Saved");
+
+    navigate("/employees");
+
+  } catch (error) {
+    console.error(error);
+    alert("Failed to add employee");
+  }
+};
 
   // ==========================================
   // Render Current Step

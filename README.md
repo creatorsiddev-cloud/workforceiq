@@ -1,29 +1,78 @@
 # WorkforceIQ
 
-A modern MERN Stack Employee & Department Management System built with React, Node.js, Express, and MongoDB.
+A modern Employee & Department Management System built using the MERN Stack. WorkforceIQ helps organizations manage employees, departments, activity logs, administrator settings, and authentication through a clean and intuitive dashboard.
+
+> ⚠️ **Note:** The current version is optimized for desktop devices. Full responsive support for tablets and mobile devices is planned in a future update.
 
 ---
 
-## Overview
+## Live Demo
 
-WorkforceIQ is a workforce management application that allows administrators to manage employees, departments, activity logs, and profile settings from a centralized dashboard.
+**Frontend:** *(Add your Vercel URL here)*
 
-This project was built to demonstrate a complete MERN application with authentication, CRUD operations, routing, and a clean dashboard UI.
+**Backend:** https://workforceiq-5.onrender.com
+
+---
+
+## Demo Credentials
+
+Email:
+admin@workforceiq.com
+
+Password:
+admin123
 
 ---
 
 ## Features
 
-- Secure Admin Login (JWT Authentication)
+### Authentication
+- Secure Admin Login using JWT
 - Protected Routes
-- Employee Management (CRUD)
-- Department Management (CRUD)
-- Activity Logs
+- Public Landing Page
+- Logout Functionality
+
+### Dashboard
 - Dashboard Overview
-- Profile Management
-- Settings Module
-- Landing Page
-- Responsive Layout (Desktop-first)
+- Employee Statistics
+- Department Statistics
+- Activity Overview
+- Search Bar
+- Administrator Profile
+
+### Employee Management
+- View Employees
+- Add Employee
+- Edit Employee
+- Delete Employee
+- Employee Details
+- Search Employees
+
+### Department Management
+- View Departments
+- Add Department
+- Edit Department
+- Delete Department
+- Department Details
+
+### Activity Logs
+- Employee Activities
+- Department Activities
+- Timestamp Tracking
+
+### Profile
+- View Administrator Profile
+- Update Personal Information
+
+### Settings
+- Appearance Settings
+- Notification Settings
+- Security Settings
+- System Settings
+
+### Landing Page
+- Professional Landing Page
+- Login Navigation
 
 ---
 
@@ -31,116 +80,209 @@ This project was built to demonstrate a complete MERN application with authentic
 
 ### Frontend
 
-- React
-- React Router
+- React 19
+- Vite
+- React Router DOM
 - Axios
 - React Icons
-- Chart.js
-- CSS
+- CSS3
 
 ### Backend
 
 - Node.js
 - Express.js
-- MongoDB
+- MongoDB Atlas
 - Mongoose
 - JWT Authentication
 - bcryptjs
+- Morgan
 
 ---
 
 ## Folder Structure
 
 ```
-client/
-    src/
-    assets/
-    components/
-    services/
-
-backend/
-    config/
-    controllers/
-    middleware/
-    models/
-    routes/
+WorkforceIQ
+│
+├── backend
+│   ├── config
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── seedAdmin.js
+│   ├── server.js
+│   └── package.json
+│
+├── client
+│   ├── src
+│   │   ├── assets
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── routes
+│   │   ├── services
+│   │   ├── styles
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+└── README.md
 ```
 
 ---
 
 ## Installation
 
-### Clone
+### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/creatorsiddev-cloud/workforceiq.git
+
+cd workforceiq
 ```
 
-### Backend
+---
+
+## Backend Setup
 
 ```bash
 cd backend
+
 npm install
+```
+
+Create a `.env` file inside the backend folder.
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+CLIENT_URL=http://localhost:5173
+```
+
+Run Backend
+
+```bash
 npm run dev
+```
+
+---
+
+## Frontend Setup
+
+```bash
+cd client
+
+npm install
+```
+
+Create a `.env` file.
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+Run Frontend
+
+```bash
+npm run dev
+```
+
+---
+
+## Production Environment Variables
+
+### Backend
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+CLIENT_URL=https://your-vercel-app.vercel.app
 ```
 
 ### Frontend
 
-```bash
-cd client
-npm install
-npm run dev
+```env
+VITE_API_URL=https://your-render-backend-url.onrender.com/api
 ```
 
 ---
 
-## Environment Variables
+## API Routes
 
-Backend
-
-```
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret
-CLIENT_URL=http://localhost:5173
-```
-
-Frontend
+### Authentication
 
 ```
-VITE_API_URL=http://localhost:5000/api
+POST /api/auth/login
+```
+
+### Employees
+
+```
+GET    /api/employees
+POST   /api/employees
+PUT    /api/employees/:id
+DELETE /api/employees/:id
+GET    /api/employees/:id
+```
+
+### Departments
+
+```
+GET    /api/departments
+POST   /api/departments
+PUT    /api/departments/:id
+DELETE /api/departments/:id
+GET    /api/departments/:id
+```
+
+### Activities
+
+```
+GET /api/activities
 ```
 
 ---
 
-## Demo Credentials
+## Screenshots
 
-```
-Email:
-admin@workforceiq.com
+Add screenshots of:
 
-Password:
-********
-```
+- Landing Page
+- Login Page
+- Dashboard
+- Employees
+- Departments
+- Activity Logs
+- Profile
+- Settings
 
 ---
 
 ## Future Improvements
 
-- Improved responsive dashboard
+- Mobile & Tablet Responsive Design
+- Dashboard Analytics
+- Export Employee Data
 - Pagination
-- Search optimization
 - Dark Mode
-- Role Based Access Control
-- Notifications
+- Role-Based Access Control
+- Profile Image Upload
+- Email Notifications
+- Advanced Search & Filters
+- Attendance Management
 
 ---
 
-## Note
+## Known Limitations
 
-This project is currently optimized for **desktop and laptop screens**.
-
-The dashboard layout is **not fully responsive** for mobile devices in this version (V1). Future versions will include a mobile-first responsive redesign.
+- Responsive design is not fully implemented.
+- Only Administrator login is supported.
+- Employee profile image upload is not available.
+- Notifications are placeholder UI.
+- Analytics charts use basic implementation.
 
 ---
 
@@ -148,4 +290,14 @@ The dashboard layout is **not fully responsive** for mobile devices in this vers
 
 **Siddhant Apankar**
 
-Built for learning, portfolio, and MERN stack practice.
+GitHub:
+https://github.com/creatorsiddev-cloud
+
+LinkedIn:
+*(Add your LinkedIn profile here)*
+
+---
+
+## License
+
+This project is developed for learning and portfolio purposes.

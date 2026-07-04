@@ -7,7 +7,13 @@
   left: 0;
   height: 100vh;
   width: var(--wiq-sidebar-width);
-  background: linear-gradient(180deg, var(--wiq-navy-900) 0%, var(--wiq-navy-950) 100%);
+background:
+linear-gradient(
+180deg,
+#3b82f6 0%,
+#2259cf 55%,
+#1e40af 100%
+);
   color: var(--wiq-text-on-dark);
   display: flex;
   flex-direction: column;
@@ -16,6 +22,13 @@
   transform: translateX(0);
   transition: transform var(--wiq-speed) var(--wiq-ease);
   overflow-y: auto;
+}
+
+.sidebar{
+    backdrop-filter: blur(18px);
+    border-right:1px solid rgba(255,255,255,.12);
+    box-shadow:
+    12px 0 30px rgba(0,0,0,.12);
 }
 
 .sidebar-content {
@@ -59,8 +72,13 @@
   height: 42px;
   flex-shrink: 0;
   border-radius: var(--wiq-radius-sm);
-  background: linear-gradient(135deg, var(--wiq-teal-500), var(--wiq-teal-400));
-  color: var(--wiq-navy-950);
+  background:linear-gradient(
+135deg,
+#ffffff,
+#dbeafe
+);
+
+color:#2563eb;
   font-weight: 800;
   font-size: 15px;
   display: flex;
@@ -79,7 +97,7 @@
 .sidebar-logo .logo-text p {
   margin: 2px 0 0;
   font-size: 11.5px;
-  color: var(--wiq-text-on-dark-muted);
+  color: white;
 }
 
 /* Navigation */
@@ -100,17 +118,32 @@
   gap: 12px;
   padding: 11px 14px;
   border-radius: var(--wiq-radius-sm);
-  color: var(--wiq-text-on-dark-muted);
+  color: white;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   transition: background var(--wiq-speed) var(--wiq-ease), color var(--wiq-speed) var(--wiq-ease);
 }
 
+
+
 .sidebar-nav a svg,
 .bottom-menu a svg {
   font-size: 17px;
   flex-shrink: 0;
+}
+
+.sidebar-nav a:hover,
+.bottom-menu a:hover{
+
+background:rgba(255,255,255,.12);
+
+transform:translateX(5px);
+
+transition:  0.5s ;
+
+color:white;
+
 }
 
 .sidebar-nav a:hover,
@@ -121,8 +154,14 @@
 
 .sidebar-nav a.active,
 .bottom-menu a.active {
-  background: rgba(45, 212, 191, 0.14);
-  color: var(--wiq-teal-400);
+background:rgba(255,255,255,.18);
+
+color:white;
+
+font-weight:600;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.15);
 }
 
 /* Bottom section */
@@ -138,7 +177,9 @@
   align-items: center;
   gap: 12px;
   padding: 11px 14px;
-  background: rgba(239, 68, 68, 0.1);
+  background:rgba(255,255,255,.08);
+
+
   border: none;
   border-radius: var(--wiq-radius-sm);
   color: #f87171;
@@ -149,7 +190,9 @@
 }
 
 .logout-btn:hover {
-  background: rgba(239, 68, 68, 0.18);
+  background:#ef4444;
+
+color:white;
 }
 
 /* Overlay (mobile/tablet only) */
